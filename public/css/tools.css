@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-select {
+    width: 120px;
+}
+
+.input-text {
+    width: 40px;
+}
+
+.input-data__game-info {
+    width: 650px;
+}
+
+.input-data__game-info__top {
+    justify-content: space-between;
+    display: flex;
+}
+
+.input-data__game-info__bottom {
+    justify-content: space-between;
+    display: flex;
+}
+
+.input-data__scoreboard {
+    display: flex;
+}
+
+.scoreboard-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-data__match-record {
+    display: flex;
+}

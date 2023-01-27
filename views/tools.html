@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link href="/css/tools.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input-data__game-info">
+            <div class="input-data__game-info__top">
+                <div class="input-data__game-info__top__season">
+                    <a>시즌</a>
+                    <select class="input-select" name="season" id="season" required>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="input-data__game-info__top__division">
+                    <a>디비전</a>
+                    <select class="input-select" name="division" id="division" disabled required>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="input-data__game-info__top__versus">
+                    <a>경기</a>
+                    <select class="input-select" name="versus" id="versus" disabled required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-data__game-info__bottom">
+                <div class="input-data__game-info__bottom__date">
+                    <a>날짜</a>
+                    <input type="date" required>
+                </div>
+                <div class="input-data__game-info__bottom__time">
+                    <a>시간</a>
+                    <input type="time" required>
+                </div>
+                <div class="input-data__game-info__bottom__stadium">
+                    <a>경기장</a>
+                    <select class="input-select" required>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="input-data__scoreboard">
+            <table class="input-data__scoreboard__table">
+                <tr class="input-data__scoreboard__inning">
+                    <th>TEAM</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>R</th>
+                </tr>
+                <tr class="input-data__scoreboard__score input-data__scoreboard__first"><!-- 첫번째 줄 시작 -->
+                    <td><select class="input-select" name="scoreboard__first-team" required></select></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                </tr><!-- 첫번째 줄 끝 -->
+                <tr class="input-data__scoreboard__score input-data__scoreboard__after"><!-- 두번째 줄 시작 -->
+                    <td><select class="input-select" name="scoreboard__after-team" required></select></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                    <td><input class="input-text" min="0" type="number"></td>
+                </tr><!-- 두번째 줄 끝 -->
+            </table>
+            <div class="scoreboard-button">
+                <input type="button" value="+" class="scoreboard-button__add">
+                <input type="button" value="-" class="scoreboard-button__sub">
+            </div>
+        </div>
+        <div class="input-data__match-record">
+            <table class="input-data__match-record__table">
+                <tr class="input-data__match-record__item">
+                    <th><select class="input-select" name="record__first-team" required></select></td>
+                    <th>AB</th>
+                    <th>H</th>
+                    <th>RBI</th>
+                    <th>SO</th>
+                    <th>W</th>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+            </table>
+            <table class="input-data__match-record__table">
+                <tr class="input-data__match-record__item">
+                    <th><select class="input-select" name="record__first-team" required></select></td>
+                    <th>AB</th>
+                    <th>H</th>
+                    <th>RBI</th>
+                    <th>SO</th>
+                    <th>W</th>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+                <tr class="input-data__match-record__player">
+                    <td><select class="input-select"></select></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                    <td><input class="input-text" type="number"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="/js/tools.js"></script>
+</body>
+</html>
